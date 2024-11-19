@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-  <title>Base</title>
-  
+  <title>{%block title %}{% endblock %}</title>
+  {% block head %}{% endblock %}
 </head>
 <body>
   <div id="wrapper">
@@ -26,7 +26,7 @@
       </nav>
     </header>
     <div id="conteudo-principal">
-
+        {% block content %}{% endblock %}
     </div>
   </div>
 
